@@ -1,4 +1,0 @@
-cvc
-===
-
-Chmod Value Counter
