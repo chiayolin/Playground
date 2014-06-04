@@ -10,7 +10,7 @@
    
    Author  : Chiayo Lin
    Email   : chiayo.lin@gail.com
-   Site    : chiayolin.org
+   Site    : www.chiayolin.org
    Date    : April 6, 2014
    License : CC BY 2.0 
 */
