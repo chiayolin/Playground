@@ -17,7 +17,7 @@
 
 #include <stdio.h>
 
-main () {
+int main () {
 	char readable, writable, executable;
 	int owner, group, other, buff, i;
 
@@ -48,5 +48,6 @@ main () {
 	printf("| Chmod  Permission  Value  |\n");
 	printf("+---------------------------+\n");
 	printf("chmod %d%d%d\n\n", owner, group, other);
+	return 0;
 	
 	}
