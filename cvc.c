@@ -49,4 +49,4 @@ int main () {
 	printf("+---------------------------+\n");
 	printf("chmod %d%d%d\n\n", owner, group, other);
 	return 0;
-	}
+}
