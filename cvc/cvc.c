@@ -28,11 +28,11 @@ int main () {
 		if(i == 2) printf("| Other Permission Setting  |\n");
 		printf("+---------------------------+\n");
 		
-		printf("Readable   (y/n) :");
+		printf("Readable   (y/n) : ");
 		scanf(" %c", &readable);
-		printf("Writable   (y/n) :");
+		printf("Writable   (y/n) : ");
 		scanf(" %c", &writable);
-		printf("Executable (y/n) :");
+		printf("Executable (y/n) : ");
 		scanf(" %c", &executable);
 
 		if(readable   == 'y') buff += 4;
