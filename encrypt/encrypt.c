@@ -35,8 +35,8 @@ int main() {
 	getchar();
 	while((ch = getchar()) != '\n') 
 		string[i++] = ch;
-	if(encryption) encrypt(string);
-	else decrypt(string);
+
+	(encryption) ? encrypt(string) : decrypt(string);
 
 	return 0;
 }
