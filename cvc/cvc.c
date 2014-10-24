@@ -2,7 +2,7 @@
    CYC 1.0
 
    Name:
-   CYC - Chmod Vaule Counter
+   CYC - chmod Vaule Counter
 
    Discriprion:
    This is a program that helps people who is new to 
