@@ -2,11 +2,10 @@
    CYC 1.0
 
    Name:
-   CYC - chmod Vaule Counter
+   CYC - chmod Vaule Calculator
 
    Discriprion:
-   This is a program that helps people who is new to 
-   Linux to get the value after the command, chmod. 
+   This program calculates the permission value of "chmod. "
    
    Author  : Chiayo Lin
    Email   : chiayo.lin@gail.com
