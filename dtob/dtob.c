@@ -1,7 +1,7 @@
 /*
- * b2dd2b.c
+ * dtob - dtob.c
  * Binary to Decimal and Decimal to Binary Converter
- * Copyright (C) 2014  Chiayo Lin
+ * Copyright (C) 2014  Chiayo Lin <chiayo.lin@gmail.com>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -22,7 +22,7 @@
 #include <stdlib.h>
 #include <math.h>
 
-#define PRT_HELP printf("use b2dd2b -h for help\n");
+#define PRT_HELP printf("use dtob -h for help\n");
 #define MAX 1000
 
 int getaton(int array[MAX]); /* Read ASCII numbers into an array, convert to numbers, return size */
@@ -61,7 +61,7 @@ int main(const int argc, char *argv[]) {
 		}
 	} 
 	
-	/* Else read the options if argv[0][0] = '-' */
+	/* Read the options if argv[0][0] = '-' */
 	else if((*++argv)[0] == '-') {
 		char opt = *++argv[0];
 		switch(opt) {
@@ -89,20 +89,21 @@ int main(const int argc, char *argv[]) {
 				break;
 
 			case 'h':
-				printf("Bin. to Dec. and Dec. to Bin. Converter\n");
-				printf("usage: b2dd2b [options] [value ...]\n");
+				printf("usage: dtob [options] [value ...]\n");
 				printf("  -h      print this usage and text\n");
 				printf("  -d      convert decimal to binary\n");
 				printf("  -b      convert binary to decimal\n");
+				printf("  -i      more info about this program\n");
 				break;
 
 			default:
-				  printf("b2dd2b: alas, invalid option '-%s' \n", argv[0]);
+				  printf("dtob: alas, invalid option '-%s' \n", argv[0]);
 				  PRT_HELP
 				  break;
 		}
 	}
 	
+	/* Else, print the error message */
 	else {
 		printf("alas, syntax error :-(\n");
 		PRT_HELP
