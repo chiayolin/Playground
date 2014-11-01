@@ -18,47 +18,90 @@
  */
 
 #include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
 #include <math.h>
 
 #define MAX 1000
 
-int btod(); /* Convert Bin. to Dec. */
+int getaton(int array[MAX]); /* Read ASCII numbers into an array, convert to numbers, return size */
+int btod(int binary[MAX], const int size); /* Convert Bin. to Dec. */
 int dtob(int decimal, int binary[MAX]); /* Convert Dec. to Bin. */
-void reverse(int array[MAX], const int size); /* Reverse array */
+void printa(const int array[MAX], const int size); /* Print an array */
+void reverse(int array[MAX], const int size); /* Reverse an array */
 
-int main(int argc, char *argv[]) {
+int main(const int argc, char *argv[]) {
 	int binary[MAX], decimal;
+	int size;
+	
+	/* Enter interactive mode if there are no command line options */
+	if(argc == 1) { 
+		int option;
+		printf("[0] Dec to Bin\n[1] Bin to Dec\n");
+		scanf("%d", &option);
+		switch(option) {
+			case 0: {
+				scanf("%d", &decimal);
+				size = dtob(decimal, binary);
+				printa(binary, size);
+				break; 
+			}
 
-	int option;
-	printf("[0] Dec to Bin\n[1] Bin to Dec\n");
-	scanf("%d", &option);
-	switch(option) {
-		case 0: {
-			int size;
-			scanf("%d", &decimal);
-			size = dtob(decimal, binary);
-
-			int i;
-			for(i = 0; i < size; i++)
-				printf("%d", binary[i]);
-			printf("\n");
-			break; 
-		}
-
-		case 1: {
-			decimal = (btod());
-			printf("%d\n", decimal);
-			break;
-		}
+			case 1: {
+				size = getaton(binary);
+				decimal = btod(binary, size);
+				printf("%d\n", decimal);
+				break;
+			}
 		
-		default:
-			printf("Not an option :-(\n");
-			break;
-	}
+			default:
+				printf("Not an option :-(\n");
+				break;
+		}
+	} 
+	
+	else if((*++argv)[0] == '-') {
+		char opt = *++argv[0];
+		switch(opt) {
+			case 'd':
+				if(argv[1] == NULL)
+					printf("agument to '-%s' is missing, expected a decimal number\n", argv[0]);
+				else {
+					decimal = atoi(argv[1]);
+					size = dtob(decimal, binary);
+					printa(binary, size);
+				}
+				break;
 
+			case 'b':
+				if(argv[1] == NULL)
+					printf("agument to '-%s' is missing, expected a binary number\n", argv[0]);
+				else {
+					size = strlen(argv[1]);
+					int i;
+					for(i = 0; i < size; i++)
+						binary[i] = argv[1][i] - '0'; 
+					decimal = btod(binary, size);
+					printf("%d\n", decimal);
+				}
+				break;
+
+			case 'h':
+				printf("usage: b2dd2b [options] [value ...]\n");
+				printf("  -h      print this usage and text\n");
+				printf("  -d      convert decimal to binary\n");
+				printf("  -b      convert binary to decimal\n");
+				break;
+
+			default:
+				  printf("b2dd2b: alas, invalid option '-%s' \n", argv[0]);
+				  printf("use b2dd2b -h for help\n");
+				  break;
+		}
+	}
+			
 	return 0;
 }	
-
 
 int dtob(int decimal, int binary[MAX]) {
 	int i, size;
@@ -76,22 +119,33 @@ int dtob(int decimal, int binary[MAX]) {
 	return size; /* Return the size of array */
 }
 
-int btod() {
-	int binary[MAX], decimal = 0;
-	int c, i, size;
-	c = i = size = 0;
-	getchar();
-
-	while((c = getchar()) != '\n') {
-		binary[i] = c - '0'; /* Convert ASCII to interger */
-		++i, ++size;
-	}
+int btod(int binary[MAX], const int size) {
+	int i, decimal;
+	i = decimal = 0;
 
 	reverse(binary, size);
 	for(i = 0; i < size; i++)
 		decimal = decimal + (binary[i] * (pow(2, i)));
 
 	return decimal;
+}
+
+int getaton(int array[MAX]) {
+	int i, c, size;
+	getchar(); /* To avoid a return '\n' */
+
+	while((c = getchar()) != '\n') {                                                                                                                             
+		array[i] = c - '0'; /* Convert ASCII to interger */
+		++i, ++size;
+	}
+	return size;
+}
+
+void printa(const int array[MAX], const int size) {
+	int i;
+	for(i = 0; i < size; i++)
+		printf("%d", array[i]);
+	printf("\n");
 }
 
 void reverse(int array[MAX], const int size) {
