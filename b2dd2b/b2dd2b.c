@@ -22,6 +22,7 @@
 #include <stdlib.h>
 #include <math.h>
 
+#define PRT_HELP printf("use b2dd2b -h for help\n");
 #define MAX 1000
 
 int getaton(int array[MAX]); /* Read ASCII numbers into an array, convert to numbers, return size */
@@ -60,6 +61,7 @@ int main(const int argc, char *argv[]) {
 		}
 	} 
 	
+	/* Else read the options if argv[0][0] = '-' */
 	else if((*++argv)[0] == '-') {
 		char opt = *++argv[0];
 		switch(opt) {
@@ -87,6 +89,7 @@ int main(const int argc, char *argv[]) {
 				break;
 
 			case 'h':
+				printf("Bin. to Dec. and Dec. to Bin. Converter\n");
 				printf("usage: b2dd2b [options] [value ...]\n");
 				printf("  -h      print this usage and text\n");
 				printf("  -d      convert decimal to binary\n");
@@ -95,9 +98,15 @@ int main(const int argc, char *argv[]) {
 
 			default:
 				  printf("b2dd2b: alas, invalid option '-%s' \n", argv[0]);
-				  printf("use b2dd2b -h for help\n");
+				  PRT_HELP
 				  break;
 		}
+	}
+	
+	else {
+		printf("alas, syntax error :-(\n");
+		PRT_HELP
+		return 1;
 	}
 			
 	return 0;
