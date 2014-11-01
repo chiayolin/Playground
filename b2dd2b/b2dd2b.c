@@ -19,13 +19,14 @@
 
 #include <stdio.h>
 #include <math.h>
+
 #define MAX 1000
 
 int btod(); /* Convert Bin. to Dec. */
 int dtob(int decimal, int binary[MAX]); /* Convert Dec. to Bin. */
 void reverse(int array[MAX], const int size); /* Reverse array */
 
-int main() {
+int main(int argc, char *argv[]) {
 	int binary[MAX], decimal;
 
 	int option;
@@ -33,11 +34,10 @@ int main() {
 	scanf("%d", &option);
 	switch(option) {
 		case 0: {
-			int input;
-			scanf("%d", &input);
-
 			int size;
-			size = dtob(input, binary);
+			scanf("%d", &decimal);
+			size = dtob(decimal, binary);
+
 			int i;
 			for(i = 0; i < size; i++)
 				printf("%d", binary[i]);
@@ -62,14 +62,18 @@ int main() {
 
 int dtob(int decimal, int binary[MAX]) {
 	int i, size;
+	if(decimal == 0) {
+		binary[0] = 0;
+		return 1;
+	} /* To fix decimal = 0 prints a blank */
+
 	for(i = 0, size = 0; decimal != 0; i++, size++) {
 		binary[i] = decimal % 2;
 		decimal = decimal / 2;
 	}
-	
 	reverse(binary, size);
 
-	return size; /* Returns the size of array */
+	return size; /* Return the size of array */
 }
 
 int btod() {
@@ -82,9 +86,8 @@ int btod() {
 		binary[i] = c - '0'; /* Convert ASCII to interger */
 		++i, ++size;
 	}
-	
-	reverse(binary, size);
 
+	reverse(binary, size);
 	for(i = 0; i < size; i++)
 		decimal = decimal + (binary[i] * (pow(2, i)));
 
@@ -94,7 +97,7 @@ int btod() {
 void reverse(int array[MAX], const int size) {
 	int temp[MAX], i;
 	for(i = 0; i < size; i++)
-		temp[i] = array[i];
+		temp[i] = array[i]; /* Copy array into a buffer */
 	int j;
 	for(i = 0, j = size - 1; j >= 0; i++, j--)
 		array[i] = temp[j];
