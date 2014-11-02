@@ -6,7 +6,7 @@
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation, either version 3 of the License, or
- * (at your option) any later version.
+ * any later version.
  *
  * This program is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
@@ -14,15 +14,14 @@
  * GNU General Public License for more details.
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
- *
  */
 
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
+#include <stdbool.h>
 #include <math.h>
 
-#define PRT_HELP printf("use dtob -h for help\n");
 #define MAX 1000
 
 int getaton(int array[MAX]); /* Read ASCII numbers into an array, convert to numbers, return size */
@@ -30,39 +29,22 @@ int btod(int binary[MAX], const int size); /* Convert Bin. to Dec. */
 int dtob(int decimal, int binary[MAX]); /* Convert Dec. to Bin. */
 void printa(const int array[MAX], const int size); /* Print an array */
 void reverse(int array[MAX], const int size); /* Reverse an array */
+void interactive(); /* Interactive mode */
+void help(int type); /* Print help messages base on the varible 'type' */
+void info(); /* Print information about this program */
 
 int main(const int argc, char *argv[]) {
 	int binary[MAX], decimal;
 	int size;
 	
 	/* Enter interactive mode if there are no command line options */
-	if(argc == 1) { 
-		int option;
-		printf("[0] Dec to Bin\n[1] Bin to Dec\n");
-		scanf("%d", &option);
-		switch(option) {
-			case 0: {
-				scanf("%d", &decimal);
-				size = dtob(decimal, binary);
-				printa(binary, size);
-				break; 
-			}
-
-			case 1: {
-				size = getaton(binary);
-				decimal = btod(binary, size);
-				printf("%d\n", decimal);
-				break;
-			}
-		
-			default:
-				printf("Not an option :-(\n");
-				break;
-		}
+	if(argc == 1) {
+		interactive();
 	} 
 	
 	/* Read the options if argv[0][0] = '-' */
 	else if((*++argv)[0] == '-') {
+		int binary[MAX], decimal, size;
 		char opt = *++argv[0];
 		switch(opt) {
 			case 'd':
@@ -89,24 +71,28 @@ int main(const int argc, char *argv[]) {
 				break;
 
 			case 'h':
-				printf("usage: dtob [options] [value ...]\n");
-				printf("  -h      print this usage and text\n");
-				printf("  -d      convert decimal to binary\n");
-				printf("  -b      convert binary to decimal\n");
-				printf("  -i      more info about this program\n");
+				help(1);
+				break;
+
+			case 'i':
+				interactive();
+				break;
+
+			case 'm':
+				info();
 				break;
 
 			default:
-				  printf("dtob: alas, invalid option '-%s' \n", argv[0]);
-				  PRT_HELP
-				  break;
+				 printf("dtob: alas, invalid option '-%s' \n", argv[0]);
+				 help(0);
+				 break;
 		}
 	}
 	
 	/* Else, print the error message */
 	else {
-		printf("alas, syntax error :-(\n");
-		PRT_HELP
+		printf("dtob: alas, syntax error :-(\n");
+		help(0);
 		return 1;
 	}
 			
@@ -165,4 +151,90 @@ void reverse(int array[MAX], const int size) {
 	int j;
 	for(i = 0, j = size - 1; j >= 0; i++, j--)
 		array[i] = temp[j];
+}
+
+void interactive() {
+	int binary[MAX], decimal, size;
+
+	printf("use h for help\n");
+	while(1) {
+		printf(">>> ");
+
+		char option;
+		scanf("%c", &option);
+		switch(option) {
+			case 'd': case 'D':
+				scanf("%d", &decimal);
+				size = dtob(decimal, binary);
+				printa(binary, size);
+				break;
+
+			case 'b': case 'B':
+				size = getaton(binary);
+				decimal = btod(binary, size);
+				printf("%d\n", decimal);
+				break;
+
+			case 'h': case 'H':
+				help(2);
+				break;
+		
+			case 'q': case 'Q':
+				return;
+				break;
+
+			case 'm': case 'M':
+				info();
+				break;
+	
+			default:
+				if(option == '\n') break;
+				else printf("unfortunately, '%c' is not an option\n", option);
+				break;
+		}
+		if(option != '\n' && option != 'b') getchar(); /* Trick to avoid scan a return, '\n' */
+	}
+}
+
+void help(int type) {
+	const char h[] = "print this usage and text\n",
+	    	   d[] = "convert decimal to binary\n",
+	    	   b[] = "convert binary to decimal\n",
+	    	   i[] = "force enter interactived mode\n",
+	    	   m[] = "more info about this program\n";
+
+	switch(type) {
+		case 0:
+			printf("use dtob -h for help\n");
+			break;
+		case 1:
+			printf("usage: dtob [options] [value ...]\n");
+			printf("  -h      %s", h);
+			printf("  -d      %s", d);
+			printf("  -b      %s", b);
+			printf("  -i      %s", i);
+			printf("  -m      %s", m);
+			break;
+
+		case 2:
+			printf("list of options:\n");
+			printf("  h    %s", h);
+			printf("  d    %s", d);
+			printf("  b    %s", b);
+			printf("  m    %s", m);
+			printf("  q    quit\n");
+			break;
+	}
+}
+
+void info() {
+	printf("dtob (Version 1.0) Copyrights (C) 2014 Chiayo Lin\n");
+	printf("Binary to Decimal and Decimal to Binary Converter\n\n");
+	printf("Source Code: <http://github.com/chiayolin/atob/>\n");
+	printf("Author     : Chiayo Lin <chiayo.lin@gmail.com>\n\n");
+	printf("License:\n");
+	printf("  This program comes with ABSOLUTELY NO WARRANTY.\n");
+	printf("  This is free software, and you are welcome to \n");
+	printf("  redistribute it under the terms of GPL v3.0.\n");
+	printf("  <http://www.gnu.org/licenses/>\n\n");
 }
