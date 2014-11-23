@@ -41,11 +41,12 @@ int main () {
 		if(i == 1) group = buff;
 		if(i == 2) other = buff;
 		readable = writable = executable = buff = 0;
-		}
+	}
 
 	printf("\n+---------------------------+\n");
 	printf("| Chmod  Permission  Value  |\n");
 	printf("+---------------------------+\n");
 	printf("chmod %d%d%d\n\n", owner, group, other);
+	
 	return 0;
 }
