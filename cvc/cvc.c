@@ -1,8 +1,8 @@
 /* 
-   CYC 1.0
+   CVC 1.0
 
    Name:
-   CYC - chmod Vaule Calculator
+   CVC - `chmod` Vaule Calculator
 
    Discriprion:
    This program calculates the permission value of "chmod. "
@@ -44,7 +44,7 @@ int main () {
 	}
 
 	printf("\n+---------------------------+\n");
-	printf("| Chmod  Permission  Value  |\n");
+	printf("|`chmod` Permission  Value  |\n");
 	printf("+---------------------------+\n");
 	printf("chmod %d%d%d\n\n", owner, group, other);
 	
