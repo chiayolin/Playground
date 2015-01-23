@@ -31,7 +31,8 @@ int main() {
 		printf("input[%02d]         : ", index);
 		scanf("%f", &input[index]);
 		sum = input[index] + sum;
-	
+	}
+
 	/* Get average */
 	avg = sum / len;
 	sum = 0, index = 1;
