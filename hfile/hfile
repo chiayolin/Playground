@@ -1,6 +1,8 @@
 #!/bin/bash
 #
+# name:
 # hfile v1.0
+#
 # description:
 # show or hide hidden files in Finder on OS X.
 # 
