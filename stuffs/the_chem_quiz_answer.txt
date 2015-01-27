@@ -1,0 +1,11 @@
+The Chem Quiz Answers
+---------------------
+1. What is absolute zero?
+Answer: -213.15 K
+
+2. Which formula below is a combined gas law?
+Answer: PV / T = PT / V
+
+3. CH4 + O2 --> CO2 + H2O
+   How many grams of H2O will be produced by 58.2 L of CH2 at STP?
+Answer: 93.6g H2O
