@@ -1,3 +1,5 @@
+// FTFD
+
 #include <stdio.h>
 #include <string.h>
 
@@ -23,10 +25,16 @@ int main() {
 	/* party time! */
 	char output[MAX];
 	int key_current = 0;
-	for(key_posi = 0; key_posi < key_size; key_posi++) {
-		key_current = key[key_posi];	
-		for(i = 0; i < len; i++)
-			input[i] = (((input[i] - 32) + (3 * key_current++)) % 94) + 32;
+	for(key_posi = 6; key_posi >= 0; key_posi--) {
+		key_current = key[key_posi];
+		
+		for(i = 0; i < len; i++) {
+			input[i] = (((input[i] - 32) - (3 * key_current++)) % 94) + 32;
+			
+			/* add 94 to avoid unprintable char(s) */
+			if(input[i] < 32)
+				input[i] = input[i] + 94;
+		}
 	}
 	input[i] = '\0';
 
