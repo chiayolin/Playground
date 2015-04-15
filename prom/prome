@@ -1,0 +1,795 @@
+#!/bin/bash
+REPO=github_hack
+
+git config --global user.name "chiay0lin"
+git config --global user.email "chiayo.lin@yahoo.com"
+
+mkdir $REPO
+cd $REPO
+git init
+
+echo "### hey :D" >> README.md
+git add README.md
+
+echo "auto configuring git..."
+git remote add origin https://github.com/chiay0lin/github_hack.git
+
+touch lea
+git add lea
+
+echo "sending data..."
+echo 0 >> lea
+GIT_AUTHOR_DATE=2014-05-18T12:00:00 GIT_COMMITTER_DATE=2014-05-18T12:00:00 git commit -a -m "lea" > /dev/null
+echo 1 >> lea
+GIT_AUTHOR_DATE=2014-05-18T12:00:00 GIT_COMMITTER_DATE=2014-05-18T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2014-05-19T12:00:00 GIT_COMMITTER_DATE=2014-05-19T12:00:00 git commit -a -m "lea" > /dev/null
+echo 1 >> lea
+GIT_AUTHOR_DATE=2014-05-19T12:00:00 GIT_COMMITTER_DATE=2014-05-19T12:00:00 git commit -a -m "lea" > /dev/null
+echo 2 >> lea
+GIT_AUTHOR_DATE=2014-05-19T12:00:00 GIT_COMMITTER_DATE=2014-05-19T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2014-05-20T12:00:00 GIT_COMMITTER_DATE=2014-05-20T12:00:00 git commit -a -m "lea" > /dev/null
+echo 1 >> lea
+GIT_AUTHOR_DATE=2014-05-20T12:00:00 GIT_COMMITTER_DATE=2014-05-20T12:00:00 git commit -a -m "lea" > /dev/null
+echo 2 >> lea
+GIT_AUTHOR_DATE=2014-05-20T12:00:00 GIT_COMMITTER_DATE=2014-05-20T12:00:00 git commit -a -m "lea" > /dev/null
+echo 3 >> lea
+GIT_AUTHOR_DATE=2014-05-20T12:00:00 GIT_COMMITTER_DATE=2014-05-20T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2014-05-21T12:00:00 GIT_COMMITTER_DATE=2014-05-21T12:00:00 git commit -a -m "lea" > /dev/null
+echo 1 >> lea
+GIT_AUTHOR_DATE=2014-05-21T12:00:00 GIT_COMMITTER_DATE=2014-05-21T12:00:00 git commit -a -m "lea" > /dev/null
+echo 2 >> lea
+GIT_AUTHOR_DATE=2014-05-21T12:00:00 GIT_COMMITTER_DATE=2014-05-21T12:00:00 git commit -a -m "lea" > /dev/null
+echo 3 >> lea
+GIT_AUTHOR_DATE=2014-05-21T12:00:00 GIT_COMMITTER_DATE=2014-05-21T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2014-05-22T12:00:00 GIT_COMMITTER_DATE=2014-05-22T12:00:00 git commit -a -m "lea" > /dev/null
+echo 1 >> lea
+GIT_AUTHOR_DATE=2014-05-22T12:00:00 GIT_COMMITTER_DATE=2014-05-22T12:00:00 git commit -a -m "lea" > /dev/null
+echo 2 >> lea
+GIT_AUTHOR_DATE=2014-05-22T12:00:00 GIT_COMMITTER_DATE=2014-05-22T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2014-05-23T12:00:00 GIT_COMMITTER_DATE=2014-05-23T12:00:00 git commit -a -m "lea" > /dev/null
+echo 1 >> lea
+GIT_AUTHOR_DATE=2014-05-23T12:00:00 GIT_COMMITTER_DATE=2014-05-23T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2014-05-24T12:00:00 GIT_COMMITTER_DATE=2014-05-24T12:00:00 git commit -a -m "lea" > /dev/null
+echo 1 >> lea
+GIT_AUTHOR_DATE=2014-05-24T12:00:00 GIT_COMMITTER_DATE=2014-05-24T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2014-05-25T12:00:00 GIT_COMMITTER_DATE=2014-05-25T12:00:00 git commit -a -m "lea" > /dev/null
+echo 1 >> lea
+GIT_AUTHOR_DATE=2014-05-25T12:00:00 GIT_COMMITTER_DATE=2014-05-25T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2014-05-28T12:00:00 GIT_COMMITTER_DATE=2014-05-28T12:00:00 git commit -a -m "lea" > /dev/null
+echo 1 >> lea
+GIT_AUTHOR_DATE=2014-05-28T12:00:00 GIT_COMMITTER_DATE=2014-05-28T12:00:00 git commit -a -m "lea" > /dev/null
+echo 2 >> lea
+GIT_AUTHOR_DATE=2014-05-28T12:00:00 GIT_COMMITTER_DATE=2014-05-28T12:00:00 git commit -a -m "lea" > /dev/null
+echo 3 >> lea
+GIT_AUTHOR_DATE=2014-05-28T12:00:00 GIT_COMMITTER_DATE=2014-05-28T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2014-06-01T12:00:00 GIT_COMMITTER_DATE=2014-06-01T12:00:00 git commit -a -m "lea" > /dev/null
+echo 1 >> lea
+GIT_AUTHOR_DATE=2014-06-01T12:00:00 GIT_COMMITTER_DATE=2014-06-01T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2014-06-04T12:00:00 GIT_COMMITTER_DATE=2014-06-04T12:00:00 git commit -a -m "lea" > /dev/null
+echo 1 >> lea
+GIT_AUTHOR_DATE=2014-06-04T12:00:00 GIT_COMMITTER_DATE=2014-06-04T12:00:00 git commit -a -m "lea" > /dev/null
+echo 2 >> lea
+GIT_AUTHOR_DATE=2014-06-04T12:00:00 GIT_COMMITTER_DATE=2014-06-04T12:00:00 git commit -a -m "lea" > /dev/null
+echo 3 >> lea
+GIT_AUTHOR_DATE=2014-06-04T12:00:00 GIT_COMMITTER_DATE=2014-06-04T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2014-06-08T12:00:00 GIT_COMMITTER_DATE=2014-06-08T12:00:00 git commit -a -m "lea" > /dev/null
+echo 1 >> lea
+GIT_AUTHOR_DATE=2014-06-08T12:00:00 GIT_COMMITTER_DATE=2014-06-08T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2014-06-11T12:00:00 GIT_COMMITTER_DATE=2014-06-11T12:00:00 git commit -a -m "lea" > /dev/null
+echo 1 >> lea
+GIT_AUTHOR_DATE=2014-06-11T12:00:00 GIT_COMMITTER_DATE=2014-06-11T12:00:00 git commit -a -m "lea" > /dev/null
+echo 2 >> lea
+GIT_AUTHOR_DATE=2014-06-11T12:00:00 GIT_COMMITTER_DATE=2014-06-11T12:00:00 git commit -a -m "lea" > /dev/null
+echo 3 >> lea
+GIT_AUTHOR_DATE=2014-06-11T12:00:00 GIT_COMMITTER_DATE=2014-06-11T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2014-06-16T12:00:00 GIT_COMMITTER_DATE=2014-06-16T12:00:00 git commit -a -m "lea" > /dev/null
+echo 1 >> lea
+GIT_AUTHOR_DATE=2014-06-16T12:00:00 GIT_COMMITTER_DATE=2014-06-16T12:00:00 git commit -a -m "lea" > /dev/null
+echo 2 >> lea
+GIT_AUTHOR_DATE=2014-06-16T12:00:00 GIT_COMMITTER_DATE=2014-06-16T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2014-06-17T12:00:00 GIT_COMMITTER_DATE=2014-06-17T12:00:00 git commit -a -m "lea" > /dev/null
+echo 1 >> lea
+GIT_AUTHOR_DATE=2014-06-17T12:00:00 GIT_COMMITTER_DATE=2014-06-17T12:00:00 git commit -a -m "lea" > /dev/null
+echo 2 >> lea
+GIT_AUTHOR_DATE=2014-06-17T12:00:00 GIT_COMMITTER_DATE=2014-06-17T12:00:00 git commit -a -m "lea" > /dev/null
+echo 3 >> lea
+GIT_AUTHOR_DATE=2014-06-17T12:00:00 GIT_COMMITTER_DATE=2014-06-17T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2014-07-06T12:00:00 GIT_COMMITTER_DATE=2014-07-06T12:00:00 git commit -a -m "lea" > /dev/null
+echo 1 >> lea
+GIT_AUTHOR_DATE=2014-07-06T12:00:00 GIT_COMMITTER_DATE=2014-07-06T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2014-07-07T12:00:00 GIT_COMMITTER_DATE=2014-07-07T12:00:00 git commit -a -m "lea" > /dev/null
+echo 1 >> lea
+GIT_AUTHOR_DATE=2014-07-07T12:00:00 GIT_COMMITTER_DATE=2014-07-07T12:00:00 git commit -a -m "lea" > /dev/null
+echo 2 >> lea
+GIT_AUTHOR_DATE=2014-07-07T12:00:00 GIT_COMMITTER_DATE=2014-07-07T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2014-07-08T12:00:00 GIT_COMMITTER_DATE=2014-07-08T12:00:00 git commit -a -m "lea" > /dev/null
+echo 1 >> lea
+GIT_AUTHOR_DATE=2014-07-08T12:00:00 GIT_COMMITTER_DATE=2014-07-08T12:00:00 git commit -a -m "lea" > /dev/null
+echo 2 >> lea
+GIT_AUTHOR_DATE=2014-07-08T12:00:00 GIT_COMMITTER_DATE=2014-07-08T12:00:00 git commit -a -m "lea" > /dev/null
+echo 3 >> lea
+GIT_AUTHOR_DATE=2014-07-08T12:00:00 GIT_COMMITTER_DATE=2014-07-08T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2014-07-09T12:00:00 GIT_COMMITTER_DATE=2014-07-09T12:00:00 git commit -a -m "lea" > /dev/null
+echo 1 >> lea
+GIT_AUTHOR_DATE=2014-07-09T12:00:00 GIT_COMMITTER_DATE=2014-07-09T12:00:00 git commit -a -m "lea" > /dev/null
+echo 2 >> lea
+GIT_AUTHOR_DATE=2014-07-09T12:00:00 GIT_COMMITTER_DATE=2014-07-09T12:00:00 git commit -a -m "lea" > /dev/null
+echo 3 >> lea
+GIT_AUTHOR_DATE=2014-07-09T12:00:00 GIT_COMMITTER_DATE=2014-07-09T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2014-07-10T12:00:00 GIT_COMMITTER_DATE=2014-07-10T12:00:00 git commit -a -m "lea" > /dev/null
+echo 1 >> lea
+GIT_AUTHOR_DATE=2014-07-10T12:00:00 GIT_COMMITTER_DATE=2014-07-10T12:00:00 git commit -a -m "lea" > /dev/null
+echo 2 >> lea
+GIT_AUTHOR_DATE=2014-07-10T12:00:00 GIT_COMMITTER_DATE=2014-07-10T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2014-07-11T12:00:00 GIT_COMMITTER_DATE=2014-07-11T12:00:00 git commit -a -m "lea" > /dev/null
+echo 1 >> lea
+GIT_AUTHOR_DATE=2014-07-11T12:00:00 GIT_COMMITTER_DATE=2014-07-11T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2014-07-12T12:00:00 GIT_COMMITTER_DATE=2014-07-12T12:00:00 git commit -a -m "lea" > /dev/null
+echo 1 >> lea
+GIT_AUTHOR_DATE=2014-07-12T12:00:00 GIT_COMMITTER_DATE=2014-07-12T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2014-07-13T12:00:00 GIT_COMMITTER_DATE=2014-07-13T12:00:00 git commit -a -m "lea" > /dev/null
+echo 1 >> lea
+GIT_AUTHOR_DATE=2014-07-13T12:00:00 GIT_COMMITTER_DATE=2014-07-13T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2014-07-16T12:00:00 GIT_COMMITTER_DATE=2014-07-16T12:00:00 git commit -a -m "lea" > /dev/null
+echo 1 >> lea
+GIT_AUTHOR_DATE=2014-07-16T12:00:00 GIT_COMMITTER_DATE=2014-07-16T12:00:00 git commit -a -m "lea" > /dev/null
+echo 2 >> lea
+GIT_AUTHOR_DATE=2014-07-16T12:00:00 GIT_COMMITTER_DATE=2014-07-16T12:00:00 git commit -a -m "lea" > /dev/null
+echo 3 >> lea
+GIT_AUTHOR_DATE=2014-07-16T12:00:00 GIT_COMMITTER_DATE=2014-07-16T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2014-07-20T12:00:00 GIT_COMMITTER_DATE=2014-07-20T12:00:00 git commit -a -m "lea" > /dev/null
+echo 1 >> lea
+GIT_AUTHOR_DATE=2014-07-20T12:00:00 GIT_COMMITTER_DATE=2014-07-20T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2014-07-23T12:00:00 GIT_COMMITTER_DATE=2014-07-23T12:00:00 git commit -a -m "lea" > /dev/null
+echo 1 >> lea
+GIT_AUTHOR_DATE=2014-07-23T12:00:00 GIT_COMMITTER_DATE=2014-07-23T12:00:00 git commit -a -m "lea" > /dev/null
+echo 2 >> lea
+GIT_AUTHOR_DATE=2014-07-23T12:00:00 GIT_COMMITTER_DATE=2014-07-23T12:00:00 git commit -a -m "lea" > /dev/null
+echo 3 >> lea
+GIT_AUTHOR_DATE=2014-07-23T12:00:00 GIT_COMMITTER_DATE=2014-07-23T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2014-07-24T12:00:00 GIT_COMMITTER_DATE=2014-07-24T12:00:00 git commit -a -m "lea" > /dev/null
+echo 1 >> lea
+GIT_AUTHOR_DATE=2014-07-24T12:00:00 GIT_COMMITTER_DATE=2014-07-24T12:00:00 git commit -a -m "lea" > /dev/null
+echo 2 >> lea
+GIT_AUTHOR_DATE=2014-07-24T12:00:00 GIT_COMMITTER_DATE=2014-07-24T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2014-07-27T12:00:00 GIT_COMMITTER_DATE=2014-07-27T12:00:00 git commit -a -m "lea" > /dev/null
+echo 1 >> lea
+GIT_AUTHOR_DATE=2014-07-27T12:00:00 GIT_COMMITTER_DATE=2014-07-27T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2014-07-30T12:00:00 GIT_COMMITTER_DATE=2014-07-30T12:00:00 git commit -a -m "lea" > /dev/null
+echo 1 >> lea
+GIT_AUTHOR_DATE=2014-07-30T12:00:00 GIT_COMMITTER_DATE=2014-07-30T12:00:00 git commit -a -m "lea" > /dev/null
+echo 2 >> lea
+GIT_AUTHOR_DATE=2014-07-30T12:00:00 GIT_COMMITTER_DATE=2014-07-30T12:00:00 git commit -a -m "lea" > /dev/null
+echo 3 >> lea
+GIT_AUTHOR_DATE=2014-07-30T12:00:00 GIT_COMMITTER_DATE=2014-07-30T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2014-08-01T12:00:00 GIT_COMMITTER_DATE=2014-08-01T12:00:00 git commit -a -m "lea" > /dev/null
+echo 1 >> lea
+GIT_AUTHOR_DATE=2014-08-01T12:00:00 GIT_COMMITTER_DATE=2014-08-01T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2014-08-04T12:00:00 GIT_COMMITTER_DATE=2014-08-04T12:00:00 git commit -a -m "lea" > /dev/null
+echo 1 >> lea
+GIT_AUTHOR_DATE=2014-08-04T12:00:00 GIT_COMMITTER_DATE=2014-08-04T12:00:00 git commit -a -m "lea" > /dev/null
+echo 2 >> lea
+GIT_AUTHOR_DATE=2014-08-04T12:00:00 GIT_COMMITTER_DATE=2014-08-04T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2014-08-05T12:00:00 GIT_COMMITTER_DATE=2014-08-05T12:00:00 git commit -a -m "lea" > /dev/null
+echo 1 >> lea
+GIT_AUTHOR_DATE=2014-08-05T12:00:00 GIT_COMMITTER_DATE=2014-08-05T12:00:00 git commit -a -m "lea" > /dev/null
+echo 2 >> lea
+GIT_AUTHOR_DATE=2014-08-05T12:00:00 GIT_COMMITTER_DATE=2014-08-05T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2014-08-08T12:00:00 GIT_COMMITTER_DATE=2014-08-08T12:00:00 git commit -a -m "lea" > /dev/null
+echo 1 >> lea
+GIT_AUTHOR_DATE=2014-08-08T12:00:00 GIT_COMMITTER_DATE=2014-08-08T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2014-08-09T12:00:00 GIT_COMMITTER_DATE=2014-08-09T12:00:00 git commit -a -m "lea" > /dev/null
+echo 1 >> lea
+GIT_AUTHOR_DATE=2014-08-09T12:00:00 GIT_COMMITTER_DATE=2014-08-09T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2014-08-25T12:00:00 GIT_COMMITTER_DATE=2014-08-25T12:00:00 git commit -a -m "lea" > /dev/null
+echo 1 >> lea
+GIT_AUTHOR_DATE=2014-08-25T12:00:00 GIT_COMMITTER_DATE=2014-08-25T12:00:00 git commit -a -m "lea" > /dev/null
+echo 2 >> lea
+GIT_AUTHOR_DATE=2014-08-25T12:00:00 GIT_COMMITTER_DATE=2014-08-25T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2014-08-26T12:00:00 GIT_COMMITTER_DATE=2014-08-26T12:00:00 git commit -a -m "lea" > /dev/null
+echo 1 >> lea
+GIT_AUTHOR_DATE=2014-08-26T12:00:00 GIT_COMMITTER_DATE=2014-08-26T12:00:00 git commit -a -m "lea" > /dev/null
+echo 2 >> lea
+GIT_AUTHOR_DATE=2014-08-26T12:00:00 GIT_COMMITTER_DATE=2014-08-26T12:00:00 git commit -a -m "lea" > /dev/null
+echo 3 >> lea
+GIT_AUTHOR_DATE=2014-08-26T12:00:00 GIT_COMMITTER_DATE=2014-08-26T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2014-08-27T12:00:00 GIT_COMMITTER_DATE=2014-08-27T12:00:00 git commit -a -m "lea" > /dev/null
+echo 1 >> lea
+GIT_AUTHOR_DATE=2014-08-27T12:00:00 GIT_COMMITTER_DATE=2014-08-27T12:00:00 git commit -a -m "lea" > /dev/null
+echo 2 >> lea
+GIT_AUTHOR_DATE=2014-08-27T12:00:00 GIT_COMMITTER_DATE=2014-08-27T12:00:00 git commit -a -m "lea" > /dev/null
+echo 3 >> lea
+GIT_AUTHOR_DATE=2014-08-27T12:00:00 GIT_COMMITTER_DATE=2014-08-27T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2014-08-28T12:00:00 GIT_COMMITTER_DATE=2014-08-28T12:00:00 git commit -a -m "lea" > /dev/null
+echo 1 >> lea
+GIT_AUTHOR_DATE=2014-08-28T12:00:00 GIT_COMMITTER_DATE=2014-08-28T12:00:00 git commit -a -m "lea" > /dev/null
+echo 2 >> lea
+GIT_AUTHOR_DATE=2014-08-28T12:00:00 GIT_COMMITTER_DATE=2014-08-28T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2014-08-29T12:00:00 GIT_COMMITTER_DATE=2014-08-29T12:00:00 git commit -a -m "lea" > /dev/null
+echo 1 >> lea
+GIT_AUTHOR_DATE=2014-08-29T12:00:00 GIT_COMMITTER_DATE=2014-08-29T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2014-08-31T12:00:00 GIT_COMMITTER_DATE=2014-08-31T12:00:00 git commit -a -m "lea" > /dev/null
+echo 1 >> lea
+GIT_AUTHOR_DATE=2014-08-31T12:00:00 GIT_COMMITTER_DATE=2014-08-31T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2014-09-06T12:00:00 GIT_COMMITTER_DATE=2014-09-06T12:00:00 git commit -a -m "lea" > /dev/null
+echo 1 >> lea
+GIT_AUTHOR_DATE=2014-09-06T12:00:00 GIT_COMMITTER_DATE=2014-09-06T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2014-09-07T12:00:00 GIT_COMMITTER_DATE=2014-09-07T12:00:00 git commit -a -m "lea" > /dev/null
+echo 1 >> lea
+GIT_AUTHOR_DATE=2014-09-07T12:00:00 GIT_COMMITTER_DATE=2014-09-07T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2014-09-13T12:00:00 GIT_COMMITTER_DATE=2014-09-13T12:00:00 git commit -a -m "lea" > /dev/null
+echo 1 >> lea
+GIT_AUTHOR_DATE=2014-09-13T12:00:00 GIT_COMMITTER_DATE=2014-09-13T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2014-09-14T12:00:00 GIT_COMMITTER_DATE=2014-09-14T12:00:00 git commit -a -m "lea" > /dev/null
+echo 1 >> lea
+GIT_AUTHOR_DATE=2014-09-14T12:00:00 GIT_COMMITTER_DATE=2014-09-14T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2014-09-20T12:00:00 GIT_COMMITTER_DATE=2014-09-20T12:00:00 git commit -a -m "lea" > /dev/null
+echo 1 >> lea
+GIT_AUTHOR_DATE=2014-09-20T12:00:00 GIT_COMMITTER_DATE=2014-09-20T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2014-09-22T12:00:00 GIT_COMMITTER_DATE=2014-09-22T12:00:00 git commit -a -m "lea" > /dev/null
+echo 1 >> lea
+GIT_AUTHOR_DATE=2014-09-22T12:00:00 GIT_COMMITTER_DATE=2014-09-22T12:00:00 git commit -a -m "lea" > /dev/null
+echo 2 >> lea
+GIT_AUTHOR_DATE=2014-09-22T12:00:00 GIT_COMMITTER_DATE=2014-09-22T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2014-09-23T12:00:00 GIT_COMMITTER_DATE=2014-09-23T12:00:00 git commit -a -m "lea" > /dev/null
+echo 1 >> lea
+GIT_AUTHOR_DATE=2014-09-23T12:00:00 GIT_COMMITTER_DATE=2014-09-23T12:00:00 git commit -a -m "lea" > /dev/null
+echo 2 >> lea
+GIT_AUTHOR_DATE=2014-09-23T12:00:00 GIT_COMMITTER_DATE=2014-09-23T12:00:00 git commit -a -m "lea" > /dev/null
+echo 3 >> lea
+GIT_AUTHOR_DATE=2014-09-23T12:00:00 GIT_COMMITTER_DATE=2014-09-23T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2014-09-24T12:00:00 GIT_COMMITTER_DATE=2014-09-24T12:00:00 git commit -a -m "lea" > /dev/null
+echo 1 >> lea
+GIT_AUTHOR_DATE=2014-09-24T12:00:00 GIT_COMMITTER_DATE=2014-09-24T12:00:00 git commit -a -m "lea" > /dev/null
+echo 2 >> lea
+GIT_AUTHOR_DATE=2014-09-24T12:00:00 GIT_COMMITTER_DATE=2014-09-24T12:00:00 git commit -a -m "lea" > /dev/null
+echo 3 >> lea
+GIT_AUTHOR_DATE=2014-09-24T12:00:00 GIT_COMMITTER_DATE=2014-09-24T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2014-09-25T12:00:00 GIT_COMMITTER_DATE=2014-09-25T12:00:00 git commit -a -m "lea" > /dev/null
+echo 1 >> lea
+GIT_AUTHOR_DATE=2014-09-25T12:00:00 GIT_COMMITTER_DATE=2014-09-25T12:00:00 git commit -a -m "lea" > /dev/null
+echo 2 >> lea
+GIT_AUTHOR_DATE=2014-09-25T12:00:00 GIT_COMMITTER_DATE=2014-09-25T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2014-09-26T12:00:00 GIT_COMMITTER_DATE=2014-09-26T12:00:00 git commit -a -m "lea" > /dev/null
+echo 1 >> lea
+GIT_AUTHOR_DATE=2014-09-26T12:00:00 GIT_COMMITTER_DATE=2014-09-26T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2014-10-12T12:00:00 GIT_COMMITTER_DATE=2014-10-12T12:00:00 git commit -a -m "lea" > /dev/null
+echo 1 >> lea
+GIT_AUTHOR_DATE=2014-10-12T12:00:00 GIT_COMMITTER_DATE=2014-10-12T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2014-10-13T12:00:00 GIT_COMMITTER_DATE=2014-10-13T12:00:00 git commit -a -m "lea" > /dev/null
+echo 1 >> lea
+GIT_AUTHOR_DATE=2014-10-13T12:00:00 GIT_COMMITTER_DATE=2014-10-13T12:00:00 git commit -a -m "lea" > /dev/null
+echo 2 >> lea
+GIT_AUTHOR_DATE=2014-10-13T12:00:00 GIT_COMMITTER_DATE=2014-10-13T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2014-10-14T12:00:00 GIT_COMMITTER_DATE=2014-10-14T12:00:00 git commit -a -m "lea" > /dev/null
+echo 1 >> lea
+GIT_AUTHOR_DATE=2014-10-14T12:00:00 GIT_COMMITTER_DATE=2014-10-14T12:00:00 git commit -a -m "lea" > /dev/null
+echo 2 >> lea
+GIT_AUTHOR_DATE=2014-10-14T12:00:00 GIT_COMMITTER_DATE=2014-10-14T12:00:00 git commit -a -m "lea" > /dev/null
+echo 3 >> lea
+GIT_AUTHOR_DATE=2014-10-14T12:00:00 GIT_COMMITTER_DATE=2014-10-14T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2014-10-15T12:00:00 GIT_COMMITTER_DATE=2014-10-15T12:00:00 git commit -a -m "lea" > /dev/null
+echo 1 >> lea
+GIT_AUTHOR_DATE=2014-10-15T12:00:00 GIT_COMMITTER_DATE=2014-10-15T12:00:00 git commit -a -m "lea" > /dev/null
+echo 2 >> lea
+GIT_AUTHOR_DATE=2014-10-15T12:00:00 GIT_COMMITTER_DATE=2014-10-15T12:00:00 git commit -a -m "lea" > /dev/null
+echo 3 >> lea
+GIT_AUTHOR_DATE=2014-10-15T12:00:00 GIT_COMMITTER_DATE=2014-10-15T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2014-10-16T12:00:00 GIT_COMMITTER_DATE=2014-10-16T12:00:00 git commit -a -m "lea" > /dev/null
+echo 1 >> lea
+GIT_AUTHOR_DATE=2014-10-16T12:00:00 GIT_COMMITTER_DATE=2014-10-16T12:00:00 git commit -a -m "lea" > /dev/null
+echo 2 >> lea
+GIT_AUTHOR_DATE=2014-10-16T12:00:00 GIT_COMMITTER_DATE=2014-10-16T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2014-10-17T12:00:00 GIT_COMMITTER_DATE=2014-10-17T12:00:00 git commit -a -m "lea" > /dev/null
+echo 1 >> lea
+GIT_AUTHOR_DATE=2014-10-17T12:00:00 GIT_COMMITTER_DATE=2014-10-17T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2014-10-18T12:00:00 GIT_COMMITTER_DATE=2014-10-18T12:00:00 git commit -a -m "lea" > /dev/null
+echo 1 >> lea
+GIT_AUTHOR_DATE=2014-10-18T12:00:00 GIT_COMMITTER_DATE=2014-10-18T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2014-10-20T12:00:00 GIT_COMMITTER_DATE=2014-10-20T12:00:00 git commit -a -m "lea" > /dev/null
+echo 1 >> lea
+GIT_AUTHOR_DATE=2014-10-20T12:00:00 GIT_COMMITTER_DATE=2014-10-20T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2014-10-28T12:00:00 GIT_COMMITTER_DATE=2014-10-28T12:00:00 git commit -a -m "lea" > /dev/null
+echo 1 >> lea
+GIT_AUTHOR_DATE=2014-10-28T12:00:00 GIT_COMMITTER_DATE=2014-10-28T12:00:00 git commit -a -m "lea" > /dev/null
+echo 2 >> lea
+GIT_AUTHOR_DATE=2014-10-28T12:00:00 GIT_COMMITTER_DATE=2014-10-28T12:00:00 git commit -a -m "lea" > /dev/null
+echo 3 >> lea
+GIT_AUTHOR_DATE=2014-10-28T12:00:00 GIT_COMMITTER_DATE=2014-10-28T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2014-11-03T12:00:00 GIT_COMMITTER_DATE=2014-11-03T12:00:00 git commit -a -m "lea" > /dev/null
+echo 1 >> lea
+GIT_AUTHOR_DATE=2014-11-03T12:00:00 GIT_COMMITTER_DATE=2014-11-03T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2014-11-09T12:00:00 GIT_COMMITTER_DATE=2014-11-09T12:00:00 git commit -a -m "lea" > /dev/null
+echo 1 >> lea
+GIT_AUTHOR_DATE=2014-11-09T12:00:00 GIT_COMMITTER_DATE=2014-11-09T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2014-11-10T12:00:00 GIT_COMMITTER_DATE=2014-11-10T12:00:00 git commit -a -m "lea" > /dev/null
+echo 1 >> lea
+GIT_AUTHOR_DATE=2014-11-10T12:00:00 GIT_COMMITTER_DATE=2014-11-10T12:00:00 git commit -a -m "lea" > /dev/null
+echo 2 >> lea
+GIT_AUTHOR_DATE=2014-11-10T12:00:00 GIT_COMMITTER_DATE=2014-11-10T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2014-11-11T12:00:00 GIT_COMMITTER_DATE=2014-11-11T12:00:00 git commit -a -m "lea" > /dev/null
+echo 1 >> lea
+GIT_AUTHOR_DATE=2014-11-11T12:00:00 GIT_COMMITTER_DATE=2014-11-11T12:00:00 git commit -a -m "lea" > /dev/null
+echo 2 >> lea
+GIT_AUTHOR_DATE=2014-11-11T12:00:00 GIT_COMMITTER_DATE=2014-11-11T12:00:00 git commit -a -m "lea" > /dev/null
+echo 3 >> lea
+GIT_AUTHOR_DATE=2014-11-11T12:00:00 GIT_COMMITTER_DATE=2014-11-11T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2014-11-12T12:00:00 GIT_COMMITTER_DATE=2014-11-12T12:00:00 git commit -a -m "lea" > /dev/null
+echo 1 >> lea
+GIT_AUTHOR_DATE=2014-11-12T12:00:00 GIT_COMMITTER_DATE=2014-11-12T12:00:00 git commit -a -m "lea" > /dev/null
+echo 2 >> lea
+GIT_AUTHOR_DATE=2014-11-12T12:00:00 GIT_COMMITTER_DATE=2014-11-12T12:00:00 git commit -a -m "lea" > /dev/null
+echo 3 >> lea
+GIT_AUTHOR_DATE=2014-11-12T12:00:00 GIT_COMMITTER_DATE=2014-11-12T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2014-11-13T12:00:00 GIT_COMMITTER_DATE=2014-11-13T12:00:00 git commit -a -m "lea" > /dev/null
+echo 1 >> lea
+GIT_AUTHOR_DATE=2014-11-13T12:00:00 GIT_COMMITTER_DATE=2014-11-13T12:00:00 git commit -a -m "lea" > /dev/null
+echo 2 >> lea
+GIT_AUTHOR_DATE=2014-11-13T12:00:00 GIT_COMMITTER_DATE=2014-11-13T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2014-11-14T12:00:00 GIT_COMMITTER_DATE=2014-11-14T12:00:00 git commit -a -m "lea" > /dev/null
+echo 1 >> lea
+GIT_AUTHOR_DATE=2014-11-14T12:00:00 GIT_COMMITTER_DATE=2014-11-14T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2014-11-15T12:00:00 GIT_COMMITTER_DATE=2014-11-15T12:00:00 git commit -a -m "lea" > /dev/null
+echo 1 >> lea
+GIT_AUTHOR_DATE=2014-11-15T12:00:00 GIT_COMMITTER_DATE=2014-11-15T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2014-12-01T12:00:00 GIT_COMMITTER_DATE=2014-12-01T12:00:00 git commit -a -m "lea" > /dev/null
+echo 1 >> lea
+GIT_AUTHOR_DATE=2014-12-01T12:00:00 GIT_COMMITTER_DATE=2014-12-01T12:00:00 git commit -a -m "lea" > /dev/null
+echo 2 >> lea
+GIT_AUTHOR_DATE=2014-12-01T12:00:00 GIT_COMMITTER_DATE=2014-12-01T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2014-12-07T12:00:00 GIT_COMMITTER_DATE=2014-12-07T12:00:00 git commit -a -m "lea" > /dev/null
+echo 1 >> lea
+GIT_AUTHOR_DATE=2014-12-07T12:00:00 GIT_COMMITTER_DATE=2014-12-07T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2014-12-14T12:00:00 GIT_COMMITTER_DATE=2014-12-14T12:00:00 git commit -a -m "lea" > /dev/null
+echo 1 >> lea
+GIT_AUTHOR_DATE=2014-12-14T12:00:00 GIT_COMMITTER_DATE=2014-12-14T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2014-12-17T12:00:00 GIT_COMMITTER_DATE=2014-12-17T12:00:00 git commit -a -m "lea" > /dev/null
+echo 1 >> lea
+GIT_AUTHOR_DATE=2014-12-17T12:00:00 GIT_COMMITTER_DATE=2014-12-17T12:00:00 git commit -a -m "lea" > /dev/null
+echo 2 >> lea
+GIT_AUTHOR_DATE=2014-12-17T12:00:00 GIT_COMMITTER_DATE=2014-12-17T12:00:00 git commit -a -m "lea" > /dev/null
+echo 3 >> lea
+GIT_AUTHOR_DATE=2014-12-17T12:00:00 GIT_COMMITTER_DATE=2014-12-17T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2014-12-18T12:00:00 GIT_COMMITTER_DATE=2014-12-18T12:00:00 git commit -a -m "lea" > /dev/null
+echo 1 >> lea
+GIT_AUTHOR_DATE=2014-12-18T12:00:00 GIT_COMMITTER_DATE=2014-12-18T12:00:00 git commit -a -m "lea" > /dev/null
+echo 2 >> lea
+GIT_AUTHOR_DATE=2014-12-18T12:00:00 GIT_COMMITTER_DATE=2014-12-18T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2014-12-20T12:00:00 GIT_COMMITTER_DATE=2014-12-20T12:00:00 git commit -a -m "lea" > /dev/null
+echo 1 >> lea
+GIT_AUTHOR_DATE=2014-12-20T12:00:00 GIT_COMMITTER_DATE=2014-12-20T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2014-12-21T12:00:00 GIT_COMMITTER_DATE=2014-12-21T12:00:00 git commit -a -m "lea" > /dev/null
+echo 1 >> lea
+GIT_AUTHOR_DATE=2014-12-21T12:00:00 GIT_COMMITTER_DATE=2014-12-21T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2014-12-24T12:00:00 GIT_COMMITTER_DATE=2014-12-24T12:00:00 git commit -a -m "lea" > /dev/null
+echo 1 >> lea
+GIT_AUTHOR_DATE=2014-12-24T12:00:00 GIT_COMMITTER_DATE=2014-12-24T12:00:00 git commit -a -m "lea" > /dev/null
+echo 2 >> lea
+GIT_AUTHOR_DATE=2014-12-24T12:00:00 GIT_COMMITTER_DATE=2014-12-24T12:00:00 git commit -a -m "lea" > /dev/null
+echo 3 >> lea
+GIT_AUTHOR_DATE=2014-12-24T12:00:00 GIT_COMMITTER_DATE=2014-12-24T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2014-12-29T12:00:00 GIT_COMMITTER_DATE=2014-12-29T12:00:00 git commit -a -m "lea" > /dev/null
+echo 1 >> lea
+GIT_AUTHOR_DATE=2014-12-29T12:00:00 GIT_COMMITTER_DATE=2014-12-29T12:00:00 git commit -a -m "lea" > /dev/null
+echo 2 >> lea
+GIT_AUTHOR_DATE=2014-12-29T12:00:00 GIT_COMMITTER_DATE=2014-12-29T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2014-12-30T12:00:00 GIT_COMMITTER_DATE=2014-12-30T12:00:00 git commit -a -m "lea" > /dev/null
+echo 1 >> lea
+GIT_AUTHOR_DATE=2014-12-30T12:00:00 GIT_COMMITTER_DATE=2014-12-30T12:00:00 git commit -a -m "lea" > /dev/null
+echo 2 >> lea
+GIT_AUTHOR_DATE=2014-12-30T12:00:00 GIT_COMMITTER_DATE=2014-12-30T12:00:00 git commit -a -m "lea" > /dev/null
+echo 3 >> lea
+GIT_AUTHOR_DATE=2014-12-30T12:00:00 GIT_COMMITTER_DATE=2014-12-30T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2015-01-19T12:00:00 GIT_COMMITTER_DATE=2015-01-19T12:00:00 git commit -a -m "lea" > /dev/null
+echo 1 >> lea
+GIT_AUTHOR_DATE=2015-01-19T12:00:00 GIT_COMMITTER_DATE=2015-01-19T12:00:00 git commit -a -m "lea" > /dev/null
+echo 2 >> lea
+GIT_AUTHOR_DATE=2015-01-19T12:00:00 GIT_COMMITTER_DATE=2015-01-19T12:00:00 git commit -a -m "lea" > /dev/null
+echo 3 >> lea
+GIT_AUTHOR_DATE=2015-01-19T12:00:00 GIT_COMMITTER_DATE=2015-01-19T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2015-01-20T12:00:00 GIT_COMMITTER_DATE=2015-01-20T12:00:00 git commit -a -m "lea" > /dev/null
+echo 1 >> lea
+GIT_AUTHOR_DATE=2015-01-20T12:00:00 GIT_COMMITTER_DATE=2015-01-20T12:00:00 git commit -a -m "lea" > /dev/null
+echo 2 >> lea
+GIT_AUTHOR_DATE=2015-01-20T12:00:00 GIT_COMMITTER_DATE=2015-01-20T12:00:00 git commit -a -m "lea" > /dev/null
+echo 3 >> lea
+GIT_AUTHOR_DATE=2015-01-20T12:00:00 GIT_COMMITTER_DATE=2015-01-20T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2015-01-21T12:00:00 GIT_COMMITTER_DATE=2015-01-21T12:00:00 git commit -a -m "lea" > /dev/null
+echo 1 >> lea
+GIT_AUTHOR_DATE=2015-01-21T12:00:00 GIT_COMMITTER_DATE=2015-01-21T12:00:00 git commit -a -m "lea" > /dev/null
+echo 2 >> lea
+GIT_AUTHOR_DATE=2015-01-21T12:00:00 GIT_COMMITTER_DATE=2015-01-21T12:00:00 git commit -a -m "lea" > /dev/null
+echo 3 >> lea
+GIT_AUTHOR_DATE=2015-01-21T12:00:00 GIT_COMMITTER_DATE=2015-01-21T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2015-01-22T12:00:00 GIT_COMMITTER_DATE=2015-01-22T12:00:00 git commit -a -m "lea" > /dev/null
+echo 1 >> lea
+GIT_AUTHOR_DATE=2015-01-22T12:00:00 GIT_COMMITTER_DATE=2015-01-22T12:00:00 git commit -a -m "lea" > /dev/null
+echo 2 >> lea
+GIT_AUTHOR_DATE=2015-01-22T12:00:00 GIT_COMMITTER_DATE=2015-01-22T12:00:00 git commit -a -m "lea" > /dev/null
+echo 3 >> lea
+GIT_AUTHOR_DATE=2015-01-22T12:00:00 GIT_COMMITTER_DATE=2015-01-22T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2015-01-25T12:00:00 GIT_COMMITTER_DATE=2015-01-25T12:00:00 git commit -a -m "lea" > /dev/null
+echo 1 >> lea
+GIT_AUTHOR_DATE=2015-01-25T12:00:00 GIT_COMMITTER_DATE=2015-01-25T12:00:00 git commit -a -m "lea" > /dev/null
+echo 2 >> lea
+GIT_AUTHOR_DATE=2015-01-25T12:00:00 GIT_COMMITTER_DATE=2015-01-25T12:00:00 git commit -a -m "lea" > /dev/null
+echo 3 >> lea
+GIT_AUTHOR_DATE=2015-01-25T12:00:00 GIT_COMMITTER_DATE=2015-01-25T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2015-01-26T12:00:00 GIT_COMMITTER_DATE=2015-01-26T12:00:00 git commit -a -m "lea" > /dev/null
+echo 1 >> lea
+GIT_AUTHOR_DATE=2015-01-26T12:00:00 GIT_COMMITTER_DATE=2015-01-26T12:00:00 git commit -a -m "lea" > /dev/null
+echo 2 >> lea
+GIT_AUTHOR_DATE=2015-01-26T12:00:00 GIT_COMMITTER_DATE=2015-01-26T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2015-01-27T12:00:00 GIT_COMMITTER_DATE=2015-01-27T12:00:00 git commit -a -m "lea" > /dev/null
+echo 1 >> lea
+GIT_AUTHOR_DATE=2015-01-27T12:00:00 GIT_COMMITTER_DATE=2015-01-27T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2015-01-28T12:00:00 GIT_COMMITTER_DATE=2015-01-28T12:00:00 git commit -a -m "lea" > /dev/null
+echo 1 >> lea
+GIT_AUTHOR_DATE=2015-01-28T12:00:00 GIT_COMMITTER_DATE=2015-01-28T12:00:00 git commit -a -m "lea" > /dev/null
+echo 2 >> lea
+GIT_AUTHOR_DATE=2015-01-28T12:00:00 GIT_COMMITTER_DATE=2015-01-28T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2015-01-29T12:00:00 GIT_COMMITTER_DATE=2015-01-29T12:00:00 git commit -a -m "lea" > /dev/null
+echo 1 >> lea
+GIT_AUTHOR_DATE=2015-01-29T12:00:00 GIT_COMMITTER_DATE=2015-01-29T12:00:00 git commit -a -m "lea" > /dev/null
+echo 2 >> lea
+GIT_AUTHOR_DATE=2015-01-29T12:00:00 GIT_COMMITTER_DATE=2015-01-29T12:00:00 git commit -a -m "lea" > /dev/null
+echo 3 >> lea
+GIT_AUTHOR_DATE=2015-01-29T12:00:00 GIT_COMMITTER_DATE=2015-01-29T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2015-01-30T12:00:00 GIT_COMMITTER_DATE=2015-01-30T12:00:00 git commit -a -m "lea" > /dev/null
+echo 1 >> lea
+GIT_AUTHOR_DATE=2015-01-30T12:00:00 GIT_COMMITTER_DATE=2015-01-30T12:00:00 git commit -a -m "lea" > /dev/null
+echo 2 >> lea
+GIT_AUTHOR_DATE=2015-01-30T12:00:00 GIT_COMMITTER_DATE=2015-01-30T12:00:00 git commit -a -m "lea" > /dev/null
+echo 3 >> lea
+GIT_AUTHOR_DATE=2015-01-30T12:00:00 GIT_COMMITTER_DATE=2015-01-30T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2015-02-01T12:00:00 GIT_COMMITTER_DATE=2015-02-01T12:00:00 git commit -a -m "lea" > /dev/null
+echo 1 >> lea
+GIT_AUTHOR_DATE=2015-02-01T12:00:00 GIT_COMMITTER_DATE=2015-02-01T12:00:00 git commit -a -m "lea" > /dev/null
+echo 2 >> lea
+GIT_AUTHOR_DATE=2015-02-01T12:00:00 GIT_COMMITTER_DATE=2015-02-01T12:00:00 git commit -a -m "lea" > /dev/null
+echo 3 >> lea
+GIT_AUTHOR_DATE=2015-02-01T12:00:00 GIT_COMMITTER_DATE=2015-02-01T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2015-02-02T12:00:00 GIT_COMMITTER_DATE=2015-02-02T12:00:00 git commit -a -m "lea" > /dev/null
+echo 1 >> lea
+GIT_AUTHOR_DATE=2015-02-02T12:00:00 GIT_COMMITTER_DATE=2015-02-02T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2015-02-03T12:00:00 GIT_COMMITTER_DATE=2015-02-03T12:00:00 git commit -a -m "lea" > /dev/null
+echo 1 >> lea
+GIT_AUTHOR_DATE=2015-02-03T12:00:00 GIT_COMMITTER_DATE=2015-02-03T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2015-02-04T12:00:00 GIT_COMMITTER_DATE=2015-02-04T12:00:00 git commit -a -m "lea" > /dev/null
+echo 1 >> lea
+GIT_AUTHOR_DATE=2015-02-04T12:00:00 GIT_COMMITTER_DATE=2015-02-04T12:00:00 git commit -a -m "lea" > /dev/null
+echo 2 >> lea
+GIT_AUTHOR_DATE=2015-02-04T12:00:00 GIT_COMMITTER_DATE=2015-02-04T12:00:00 git commit -a -m "lea" > /dev/null
+echo 3 >> lea
+GIT_AUTHOR_DATE=2015-02-04T12:00:00 GIT_COMMITTER_DATE=2015-02-04T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2015-02-05T12:00:00 GIT_COMMITTER_DATE=2015-02-05T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2015-02-06T12:00:00 GIT_COMMITTER_DATE=2015-02-06T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2015-02-07T12:00:00 GIT_COMMITTER_DATE=2015-02-07T12:00:00 git commit -a -m "lea" > /dev/null
+echo 1 >> lea
+GIT_AUTHOR_DATE=2015-02-07T12:00:00 GIT_COMMITTER_DATE=2015-02-07T12:00:00 git commit -a -m "lea" > /dev/null
+echo 2 >> lea
+GIT_AUTHOR_DATE=2015-02-07T12:00:00 GIT_COMMITTER_DATE=2015-02-07T12:00:00 git commit -a -m "lea" > /dev/null
+echo 3 >> lea
+GIT_AUTHOR_DATE=2015-02-07T12:00:00 GIT_COMMITTER_DATE=2015-02-07T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2015-02-08T12:00:00 GIT_COMMITTER_DATE=2015-02-08T12:00:00 git commit -a -m "lea" > /dev/null
+echo 1 >> lea
+GIT_AUTHOR_DATE=2015-02-08T12:00:00 GIT_COMMITTER_DATE=2015-02-08T12:00:00 git commit -a -m "lea" > /dev/null
+echo 2 >> lea
+GIT_AUTHOR_DATE=2015-02-08T12:00:00 GIT_COMMITTER_DATE=2015-02-08T12:00:00 git commit -a -m "lea" > /dev/null
+echo 3 >> lea
+GIT_AUTHOR_DATE=2015-02-08T12:00:00 GIT_COMMITTER_DATE=2015-02-08T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2015-02-09T12:00:00 GIT_COMMITTER_DATE=2015-02-09T12:00:00 git commit -a -m "lea" > /dev/null
+echo 1 >> lea
+GIT_AUTHOR_DATE=2015-02-09T12:00:00 GIT_COMMITTER_DATE=2015-02-09T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2015-02-10T12:00:00 GIT_COMMITTER_DATE=2015-02-10T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2015-02-11T12:00:00 GIT_COMMITTER_DATE=2015-02-11T12:00:00 git commit -a -m "lea" > /dev/null
+echo 1 >> lea
+GIT_AUTHOR_DATE=2015-02-11T12:00:00 GIT_COMMITTER_DATE=2015-02-11T12:00:00 git commit -a -m "lea" > /dev/null
+echo 2 >> lea
+GIT_AUTHOR_DATE=2015-02-11T12:00:00 GIT_COMMITTER_DATE=2015-02-11T12:00:00 git commit -a -m "lea" > /dev/null
+echo 3 >> lea
+GIT_AUTHOR_DATE=2015-02-11T12:00:00 GIT_COMMITTER_DATE=2015-02-11T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2015-02-12T12:00:00 GIT_COMMITTER_DATE=2015-02-12T12:00:00 git commit -a -m "lea" > /dev/null
+echo 1 >> lea
+GIT_AUTHOR_DATE=2015-02-12T12:00:00 GIT_COMMITTER_DATE=2015-02-12T12:00:00 git commit -a -m "lea" > /dev/null
+echo 2 >> lea
+GIT_AUTHOR_DATE=2015-02-12T12:00:00 GIT_COMMITTER_DATE=2015-02-12T12:00:00 git commit -a -m "lea" > /dev/null
+echo 3 >> lea
+GIT_AUTHOR_DATE=2015-02-12T12:00:00 GIT_COMMITTER_DATE=2015-02-12T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2015-02-13T12:00:00 GIT_COMMITTER_DATE=2015-02-13T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2015-02-14T12:00:00 GIT_COMMITTER_DATE=2015-02-14T12:00:00 git commit -a -m "lea" > /dev/null
+echo 1 >> lea
+GIT_AUTHOR_DATE=2015-02-14T12:00:00 GIT_COMMITTER_DATE=2015-02-14T12:00:00 git commit -a -m "lea" > /dev/null
+echo 2 >> lea
+GIT_AUTHOR_DATE=2015-02-14T12:00:00 GIT_COMMITTER_DATE=2015-02-14T12:00:00 git commit -a -m "lea" > /dev/null
+echo 3 >> lea
+GIT_AUTHOR_DATE=2015-02-14T12:00:00 GIT_COMMITTER_DATE=2015-02-14T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2015-02-15T12:00:00 GIT_COMMITTER_DATE=2015-02-15T12:00:00 git commit -a -m "lea" > /dev/null
+echo 1 >> lea
+GIT_AUTHOR_DATE=2015-02-15T12:00:00 GIT_COMMITTER_DATE=2015-02-15T12:00:00 git commit -a -m "lea" > /dev/null
+echo 2 >> lea
+GIT_AUTHOR_DATE=2015-02-15T12:00:00 GIT_COMMITTER_DATE=2015-02-15T12:00:00 git commit -a -m "lea" > /dev/null
+echo 3 >> lea
+GIT_AUTHOR_DATE=2015-02-15T12:00:00 GIT_COMMITTER_DATE=2015-02-15T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2015-02-16T12:00:00 GIT_COMMITTER_DATE=2015-02-16T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2015-02-17T12:00:00 GIT_COMMITTER_DATE=2015-02-17T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2015-02-18T12:00:00 GIT_COMMITTER_DATE=2015-02-18T12:00:00 git commit -a -m "lea" > /dev/null
+echo 1 >> lea
+GIT_AUTHOR_DATE=2015-02-18T12:00:00 GIT_COMMITTER_DATE=2015-02-18T12:00:00 git commit -a -m "lea" > /dev/null
+echo 2 >> lea
+GIT_AUTHOR_DATE=2015-02-18T12:00:00 GIT_COMMITTER_DATE=2015-02-18T12:00:00 git commit -a -m "lea" > /dev/null
+echo 3 >> lea
+GIT_AUTHOR_DATE=2015-02-18T12:00:00 GIT_COMMITTER_DATE=2015-02-18T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2015-02-19T12:00:00 GIT_COMMITTER_DATE=2015-02-19T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2015-02-20T12:00:00 GIT_COMMITTER_DATE=2015-02-20T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2015-02-21T12:00:00 GIT_COMMITTER_DATE=2015-02-21T12:00:00 git commit -a -m "lea" > /dev/null
+echo 1 >> lea
+GIT_AUTHOR_DATE=2015-02-21T12:00:00 GIT_COMMITTER_DATE=2015-02-21T12:00:00 git commit -a -m "lea" > /dev/null
+echo 2 >> lea
+GIT_AUTHOR_DATE=2015-02-21T12:00:00 GIT_COMMITTER_DATE=2015-02-21T12:00:00 git commit -a -m "lea" > /dev/null
+echo 3 >> lea
+GIT_AUTHOR_DATE=2015-02-21T12:00:00 GIT_COMMITTER_DATE=2015-02-21T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2015-02-22T12:00:00 GIT_COMMITTER_DATE=2015-02-22T12:00:00 git commit -a -m "lea" > /dev/null
+echo 1 >> lea
+GIT_AUTHOR_DATE=2015-02-22T12:00:00 GIT_COMMITTER_DATE=2015-02-22T12:00:00 git commit -a -m "lea" > /dev/null
+echo 2 >> lea
+GIT_AUTHOR_DATE=2015-02-22T12:00:00 GIT_COMMITTER_DATE=2015-02-22T12:00:00 git commit -a -m "lea" > /dev/null
+echo 3 >> lea
+GIT_AUTHOR_DATE=2015-02-22T12:00:00 GIT_COMMITTER_DATE=2015-02-22T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2015-02-23T12:00:00 GIT_COMMITTER_DATE=2015-02-23T12:00:00 git commit -a -m "lea" > /dev/null
+echo 1 >> lea
+GIT_AUTHOR_DATE=2015-02-23T12:00:00 GIT_COMMITTER_DATE=2015-02-23T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2015-02-24T12:00:00 GIT_COMMITTER_DATE=2015-02-24T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2015-02-25T12:00:00 GIT_COMMITTER_DATE=2015-02-25T12:00:00 git commit -a -m "lea" > /dev/null
+echo 1 >> lea
+GIT_AUTHOR_DATE=2015-02-25T12:00:00 GIT_COMMITTER_DATE=2015-02-25T12:00:00 git commit -a -m "lea" > /dev/null
+echo 2 >> lea
+GIT_AUTHOR_DATE=2015-02-25T12:00:00 GIT_COMMITTER_DATE=2015-02-25T12:00:00 git commit -a -m "lea" > /dev/null
+echo 3 >> lea
+GIT_AUTHOR_DATE=2015-02-25T12:00:00 GIT_COMMITTER_DATE=2015-02-25T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2015-02-26T12:00:00 GIT_COMMITTER_DATE=2015-02-26T12:00:00 git commit -a -m "lea" > /dev/null
+echo 1 >> lea
+GIT_AUTHOR_DATE=2015-02-26T12:00:00 GIT_COMMITTER_DATE=2015-02-26T12:00:00 git commit -a -m "lea" > /dev/null
+echo 2 >> lea
+GIT_AUTHOR_DATE=2015-02-26T12:00:00 GIT_COMMITTER_DATE=2015-02-26T12:00:00 git commit -a -m "lea" > /dev/null
+echo 3 >> lea
+GIT_AUTHOR_DATE=2015-02-26T12:00:00 GIT_COMMITTER_DATE=2015-02-26T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2015-02-27T12:00:00 GIT_COMMITTER_DATE=2015-02-27T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2015-02-28T12:00:00 GIT_COMMITTER_DATE=2015-02-28T12:00:00 git commit -a -m "lea" > /dev/null
+echo 1 >> lea
+GIT_AUTHOR_DATE=2015-02-28T12:00:00 GIT_COMMITTER_DATE=2015-02-28T12:00:00 git commit -a -m "lea" > /dev/null
+echo 2 >> lea
+GIT_AUTHOR_DATE=2015-02-28T12:00:00 GIT_COMMITTER_DATE=2015-02-28T12:00:00 git commit -a -m "lea" > /dev/null
+echo 3 >> lea
+GIT_AUTHOR_DATE=2015-02-28T12:00:00 GIT_COMMITTER_DATE=2015-02-28T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2015-03-01T12:00:00 GIT_COMMITTER_DATE=2015-03-01T12:00:00 git commit -a -m "lea" > /dev/null
+echo 1 >> lea
+GIT_AUTHOR_DATE=2015-03-01T12:00:00 GIT_COMMITTER_DATE=2015-03-01T12:00:00 git commit -a -m "lea" > /dev/null
+echo 2 >> lea
+GIT_AUTHOR_DATE=2015-03-01T12:00:00 GIT_COMMITTER_DATE=2015-03-01T12:00:00 git commit -a -m "lea" > /dev/null
+echo 3 >> lea
+GIT_AUTHOR_DATE=2015-03-01T12:00:00 GIT_COMMITTER_DATE=2015-03-01T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2015-03-02T12:00:00 GIT_COMMITTER_DATE=2015-03-02T12:00:00 git commit -a -m "lea" > /dev/null
+echo 1 >> lea
+GIT_AUTHOR_DATE=2015-03-02T12:00:00 GIT_COMMITTER_DATE=2015-03-02T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2015-03-03T12:00:00 GIT_COMMITTER_DATE=2015-03-03T12:00:00 git commit -a -m "lea" > /dev/null
+echo 1 >> lea
+GIT_AUTHOR_DATE=2015-03-03T12:00:00 GIT_COMMITTER_DATE=2015-03-03T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2015-03-04T12:00:00 GIT_COMMITTER_DATE=2015-03-04T12:00:00 git commit -a -m "lea" > /dev/null
+echo 1 >> lea
+GIT_AUTHOR_DATE=2015-03-04T12:00:00 GIT_COMMITTER_DATE=2015-03-04T12:00:00 git commit -a -m "lea" > /dev/null
+echo 2 >> lea
+GIT_AUTHOR_DATE=2015-03-04T12:00:00 GIT_COMMITTER_DATE=2015-03-04T12:00:00 git commit -a -m "lea" > /dev/null
+echo 3 >> lea
+GIT_AUTHOR_DATE=2015-03-04T12:00:00 GIT_COMMITTER_DATE=2015-03-04T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2015-03-05T12:00:00 GIT_COMMITTER_DATE=2015-03-05T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2015-03-06T12:00:00 GIT_COMMITTER_DATE=2015-03-06T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2015-03-07T12:00:00 GIT_COMMITTER_DATE=2015-03-07T12:00:00 git commit -a -m "lea" > /dev/null
+echo 1 >> lea
+GIT_AUTHOR_DATE=2015-03-07T12:00:00 GIT_COMMITTER_DATE=2015-03-07T12:00:00 git commit -a -m "lea" > /dev/null
+echo 2 >> lea
+GIT_AUTHOR_DATE=2015-03-07T12:00:00 GIT_COMMITTER_DATE=2015-03-07T12:00:00 git commit -a -m "lea" > /dev/null
+echo 3 >> lea
+GIT_AUTHOR_DATE=2015-03-07T12:00:00 GIT_COMMITTER_DATE=2015-03-07T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2015-03-08T12:00:00 GIT_COMMITTER_DATE=2015-03-08T12:00:00 git commit -a -m "lea" > /dev/null
+echo 1 >> lea
+GIT_AUTHOR_DATE=2015-03-08T12:00:00 GIT_COMMITTER_DATE=2015-03-08T12:00:00 git commit -a -m "lea" > /dev/null
+echo 2 >> lea
+GIT_AUTHOR_DATE=2015-03-08T12:00:00 GIT_COMMITTER_DATE=2015-03-08T12:00:00 git commit -a -m "lea" > /dev/null
+echo 3 >> lea
+GIT_AUTHOR_DATE=2015-03-08T12:00:00 GIT_COMMITTER_DATE=2015-03-08T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2015-03-09T12:00:00 GIT_COMMITTER_DATE=2015-03-09T12:00:00 git commit -a -m "lea" > /dev/null
+echo 1 >> lea
+GIT_AUTHOR_DATE=2015-03-09T12:00:00 GIT_COMMITTER_DATE=2015-03-09T12:00:00 git commit -a -m "lea" > /dev/null
+echo 2 >> lea
+GIT_AUTHOR_DATE=2015-03-09T12:00:00 GIT_COMMITTER_DATE=2015-03-09T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2015-03-10T12:00:00 GIT_COMMITTER_DATE=2015-03-10T12:00:00 git commit -a -m "lea" > /dev/null
+echo 1 >> lea
+GIT_AUTHOR_DATE=2015-03-10T12:00:00 GIT_COMMITTER_DATE=2015-03-10T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2015-03-11T12:00:00 GIT_COMMITTER_DATE=2015-03-11T12:00:00 git commit -a -m "lea" > /dev/null
+echo 1 >> lea
+GIT_AUTHOR_DATE=2015-03-11T12:00:00 GIT_COMMITTER_DATE=2015-03-11T12:00:00 git commit -a -m "lea" > /dev/null
+echo 2 >> lea
+GIT_AUTHOR_DATE=2015-03-11T12:00:00 GIT_COMMITTER_DATE=2015-03-11T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2015-03-12T12:00:00 GIT_COMMITTER_DATE=2015-03-12T12:00:00 git commit -a -m "lea" > /dev/null
+echo 1 >> lea
+GIT_AUTHOR_DATE=2015-03-12T12:00:00 GIT_COMMITTER_DATE=2015-03-12T12:00:00 git commit -a -m "lea" > /dev/null
+echo 2 >> lea
+GIT_AUTHOR_DATE=2015-03-12T12:00:00 GIT_COMMITTER_DATE=2015-03-12T12:00:00 git commit -a -m "lea" > /dev/null
+echo 3 >> lea
+GIT_AUTHOR_DATE=2015-03-12T12:00:00 GIT_COMMITTER_DATE=2015-03-12T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2015-03-13T12:00:00 GIT_COMMITTER_DATE=2015-03-13T12:00:00 git commit -a -m "lea" > /dev/null
+echo 1 >> lea
+GIT_AUTHOR_DATE=2015-03-13T12:00:00 GIT_COMMITTER_DATE=2015-03-13T12:00:00 git commit -a -m "lea" > /dev/null
+echo 2 >> lea
+GIT_AUTHOR_DATE=2015-03-13T12:00:00 GIT_COMMITTER_DATE=2015-03-13T12:00:00 git commit -a -m "lea" > /dev/null
+echo 3 >> lea
+GIT_AUTHOR_DATE=2015-03-13T12:00:00 GIT_COMMITTER_DATE=2015-03-13T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2015-03-16T12:00:00 GIT_COMMITTER_DATE=2015-03-16T12:00:00 git commit -a -m "lea" > /dev/null
+echo 1 >> lea
+GIT_AUTHOR_DATE=2015-03-16T12:00:00 GIT_COMMITTER_DATE=2015-03-16T12:00:00 git commit -a -m "lea" > /dev/null
+echo 2 >> lea
+GIT_AUTHOR_DATE=2015-03-16T12:00:00 GIT_COMMITTER_DATE=2015-03-16T12:00:00 git commit -a -m "lea" > /dev/null
+echo 3 >> lea
+GIT_AUTHOR_DATE=2015-03-16T12:00:00 GIT_COMMITTER_DATE=2015-03-16T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2015-03-17T12:00:00 GIT_COMMITTER_DATE=2015-03-17T12:00:00 git commit -a -m "lea" > /dev/null
+echo 1 >> lea
+GIT_AUTHOR_DATE=2015-03-17T12:00:00 GIT_COMMITTER_DATE=2015-03-17T12:00:00 git commit -a -m "lea" > /dev/null
+echo 2 >> lea
+GIT_AUTHOR_DATE=2015-03-17T12:00:00 GIT_COMMITTER_DATE=2015-03-17T12:00:00 git commit -a -m "lea" > /dev/null
+echo 3 >> lea
+GIT_AUTHOR_DATE=2015-03-17T12:00:00 GIT_COMMITTER_DATE=2015-03-17T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2015-03-18T12:00:00 GIT_COMMITTER_DATE=2015-03-18T12:00:00 git commit -a -m "lea" > /dev/null
+echo 1 >> lea
+GIT_AUTHOR_DATE=2015-03-18T12:00:00 GIT_COMMITTER_DATE=2015-03-18T12:00:00 git commit -a -m "lea" > /dev/null
+echo 2 >> lea
+GIT_AUTHOR_DATE=2015-03-18T12:00:00 GIT_COMMITTER_DATE=2015-03-18T12:00:00 git commit -a -m "lea" > /dev/null
+echo 3 >> lea
+GIT_AUTHOR_DATE=2015-03-18T12:00:00 GIT_COMMITTER_DATE=2015-03-18T12:00:00 git commit -a -m "lea" > /dev/null
+echo 0 >> lea
+GIT_AUTHOR_DATE=2015-03-19T12:00:00 GIT_COMMITTER_DATE=2015-03-19T12:00:00 git commit -a -m "lea" > /dev/null
+echo 1 >> lea
+GIT_AUTHOR_DATE=2015-03-19T12:00:00 GIT_COMMITTER_DATE=2015-03-19T12:00:00 git commit -a -m "lea" > /dev/null
+echo 2 >> lea
+GIT_AUTHOR_DATE=2015-03-19T12:00:00 GIT_COMMITTER_DATE=2015-03-19T12:00:00 git commit -a -m "lea" > /dev/null
+echo 3 >> lea
+GIT_AUTHOR_DATE=2015-03-19T12:00:00 GIT_COMMITTER_DATE=2015-03-19T12:00:00 git commit -a -m "lea" > /dev/null
+
+echo "pushing..."
+git push -u origin master
+
+echo "restoring git configs"
+git config --global user.name "chiayolin"
+git config --global user.email "chiay.lin@gmail.com"
+
+exit 0
