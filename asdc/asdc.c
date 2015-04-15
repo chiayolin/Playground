@@ -30,7 +30,7 @@ int main() {
 	while(index <= len) {
 		printf("input[%02d]         : ", index);
 		scanf("%f", &input[index]);
-		sum = input[index] + sum;
+		sum = input[index++] + sum;
 	}
 
 	/* Get average */
