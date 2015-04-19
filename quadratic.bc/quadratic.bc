@@ -1,0 +1,9 @@
+scale = 10
+
+define r_zero (a, b, c) { 
+	return (((-b) / (2 * a)) + (sqrt((b^2) - (4 * a * c)) / (a * 2))) 
+}
+
+define l_zero (a, b, c) {
+	return (((-b) / (2 * a)) - (sqrt((b^2) - (4 * a * c)) / (a * 2)))
+}
