@@ -1,9 +1,12 @@
 scale = 10
 
-define r_zero (a, b, c) { 
-	return (((-b) / (2 * a)) + (sqrt((b^2) - (4 * a * c)) / (a * 2))) 
-}
-
-define l_zero (a, b, c) {
-	return (((-b) / (2 * a)) - (sqrt((b^2) - (4 * a * c)) / (a * 2)))
+define zeros (a, b, c) { 
+	r_zero = (((-b) / (2 * a)) + (sqrt((b^2) - (4 * a * c)) / (a * 2)))
+  l_zero = (((-b) / (2 * a)) - (sqrt((b^2) - (4 * a * c)) / (a * 2)))
+	print "r_zero: "
+	print  r_zero
+	print "\n"
+	print "l_zero: "
+	print  l_zero
+	print "\n"
 }
