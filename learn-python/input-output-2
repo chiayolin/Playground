@@ -1,0 +1,7 @@
+#!/usr/bin/python
+
+# what's your name?
+print "what's your name? ", # trailing comma suppresses newline
+name =  raw_input() # get input
+print "hello", name, "nice to meet you :)"
+
