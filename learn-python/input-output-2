@@ -2,6 +2,15 @@
 
 # what's your name?
 print "what's your name? ", # trailing comma suppresses newline
-name =  raw_input() # get input
+var =  raw_input() # get input
 print "hello", name, "nice to meet you :)"
 
+# what do you like to do?
+print "what do you like to do?",
+var = raw_input()
+print var, "? I like to do that as well!"
+
+# what to you like to eat?
+print "what do you like to eat? ",
+var = raw_input()
+print var, "? I like to eat that as well!"
