@@ -1,0 +1,15 @@
+#!/bin/python
+var = raw_input ("hey, what's your name? ")
+print "hello,", var, "nice to meet you. What do you like to do?",
+var = raw_input()
+print var, "? I like to do that as well!"
+print "what do you like to eat? ",
+var = raw_input()
+print "I like to eat" ,var, "as well!"
+print "What is the temperature right now?",
+temp = raw_input()
+(raw_input == int) 
+if float(temp) > 30:
+	print ("As usual")
+else:
+	print ("That's not possible")
