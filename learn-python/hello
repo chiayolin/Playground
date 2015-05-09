@@ -7,9 +7,11 @@ print "what do you like to eat? ",
 var = raw_input()
 print "I like to eat" ,var, "as well!"
 print "What is the temperature right now?",
-temp = raw_input()
-(raw_input == int) 
-if float(temp) > 30:
-	print ("As usual")
+temp = raw_input() 
+if u'temp'.isnumeric():
+	if float(temp) > 30:
+		print ("As usual")
+	else:
+		print ("That's not possible")
 else:
-	print ("That's not possible")
+	print ("TYPE A NUMBER, NOT A WORD")
