@@ -14,3 +14,15 @@ print var, "? I like to do that as well!"
 print "what do you like to eat? ",
 var = raw_input()
 print var, "? I like to eat that as well!"
+
+print "what's the temperature today? ",
+var = raw_input()
+
+if var.isdigit():
+    if float(var) >= 30:
+        print "this is not possible!"
+    else:
+        print "i like that temperature :)"
+else:
+    print "I NEED A NUMBER!"
+
