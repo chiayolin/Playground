@@ -40,15 +40,13 @@ else
 fi
 
 if [ $OKAY -ne 0 ]; then
-	printf "hidden files: "
-	if [ $OKAY -eq 1 ]; then
-		echo "show"
-	elif [ $OKAY -eq 2 ]; then
-		echo "hide"
-	fi
-  
-  echo "relaunching Finder..."
+  echo "restarting Finder..."
   killall Finder
-fi
 
-exit
+	printf "hidden files are now "
+	if [ $OKAY -eq 1 ]; then
+		echo "shown"
+	elif [ $OKAY -eq 2 ]; then
+		echo "hidden"
+	fi
+fi
