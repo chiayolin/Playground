@@ -1,7 +1,7 @@
 #!/bin/bash
 #
 # name:
-# hfile v1.0
+# hfile v2.0
 #
 # description:
 # show or hide hidden files in Finder on OS X.
@@ -46,8 +46,9 @@ if [ $OKAY -ne 0 ]; then
 	elif [ $OKAY -eq 2 ]; then
 		echo "hide"
 	fi
-
-	echo "please relunch Finder"
+  
+  echo "relaunching Finder..."
+  killall Finder
 fi
 
 exit
