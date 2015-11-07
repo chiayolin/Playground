@@ -14,7 +14,6 @@ code = [('A',".-"), ('B',"-..."), ('C',"-.-."), ('D',"-.."), ('E',"."),
 print('this is a plaintext to Morsecode converter,\n' + \
     'input may contain letters only.')
 
-
 ## loop
 while True:
     ## prompt and get input
