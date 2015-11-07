@@ -2,22 +2,30 @@
 # Authors: Nirat Singh, Chiayo Lin  
 # License: GPL 3.0
 
-## init 
+import sys
+
+## morsecode table
 code = [('A',".-"), ('B',"-..."), ('C',"-.-."), ('D',"-.."), ('E',"."), 
     ('F',"..-."), ('G',"--."),  ('H',"...."), ('I',".."),  ('J',".---"),
     ('K',"-.-"),  ('L',".-.."), ('M',"--"),   ('N',"-."),  ('O',"---"),
     ('P',".--."), ('Q',"--.-"), ('R',".-."),  ('S',"..."), ('T',"-"),
     ('U',"..-"),  ('V',"...-"), ('W',".--"),  ('X',"-..-"),('Y',"-.--"),
-    ('Z',"--..")]
+    ('Z',"--.."), (' ', " ")]
 
 ## info
-print('this is a plaintext to Morsecode converter,\n' + \
-    'input may contain letters only.')
+print('this is a plaintext to Morsecode converter.')
 
 ## loop
 while True:
     ## prompt and get input
-    string = input('enter your sentence: ').upper().rstrip()
+    string = " ".join( \
+        input('enter your sentence: ') \
+            .upper().rstrip().split()) 
+            # ^ remove extra whitespaces and chop off 
+            #   trailing newline
+    
+    ## init
+    morsecode = []
 
     ## main and error handling 
     try:
@@ -26,13 +34,15 @@ while True:
             found_item = False
             while not found_item:
                 if ch == code[counter][0]:
-                    print(code[counter][1], end='')
+                    morsecode.append(code[counter][1])
                     found_item = True
                 counter += 1
     except IndexError:
-        print("error: invalid character(s)", end='')
-    print(end='\n')
+        print('error: input may contain letters and spaces only :(',
+            file=sys.stderr)
+    else:
+        print(*morsecode, sep=' ', end='\n')
 
     ## terminate?
-    quit() if input('again? (y/n): ').split()[0][0].lower() != 'y' \
-        else None
+    quit() if input('try again? (y/n): ') \
+        .split()[0][0].lower() != 'y' else None
