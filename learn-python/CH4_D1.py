@@ -34,7 +34,7 @@ while True:
             counter = 0
             found_item = False
             while not found_item:
-                if ch == code[counter][0]:
+                if ch in code[counter][0]:
                     morsecode.append(code[counter][1])
                     found_item = True
                 counter += 1
