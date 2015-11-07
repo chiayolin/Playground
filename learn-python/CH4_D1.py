@@ -21,7 +21,8 @@ while True:
     string = " ".join( \
         input('enter your sentence: ') \
             .upper().rstrip().split()) 
-            # ^ remove extra whitespaces and chop off 
+            # ^ convert string to uppercase, remove 
+            #   extra whitespaces, and chop off 
             #   trailing newline
     
     ## init
