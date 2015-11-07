@@ -31,12 +31,11 @@ while True:
     ## main and error handling 
     try:
         for ch in string:
-            counter = 0
-            found_item = False
+            counter = found_item = 0
             while not found_item:
                 if ch in code[counter][0]:
                     morsecode.append(code[counter][1])
-                    found_item = True
+                    found_item = 1
                 counter += 1
     except IndexError:
         print('error: input may contain letters and spaces only :(',
