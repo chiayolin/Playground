@@ -21,20 +21,16 @@ def dow(m, d, y):
 
 # some commonsense that computers don't know
 monday = 1; labor_day_day = 1 # initialize Labor's Day day first
-
 holiday = \
     [("New Year's Eve", 12, 31), ("St. Patrick Day", 3, 17),
     ("April Fool’s Day", 4, 1), ("Fourth of July", 7, 4),
     ["Labor Day", 9, 1], ("Halloween", 10, 31)]
-
 month_name = \
     ('January', 'February', 'March', 'April', 'May', 'June', 'July', 
     'August', 'September', 'October', 'November', 'December')
-
 day_name = \
     ('Sunday', 'Monday','Tuesday','Wednesday','Thursday',
     'Friday', 'Saturday')
-
 
 ## main
 terminate = 0
