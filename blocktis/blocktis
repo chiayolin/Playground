@@ -1,0 +1,46 @@
+#!/bin/bash 
+# a quick simple script that blocks any address 
+# given as a command argument by appending the 
+# address into /etc/hosts pointing to <0.0.0.0>.
+
+_target=/etc/hosts
+
+_help() {
+ echo "usage: $0 [option] [address]"
+ echo "option:"
+ echo "  -h  print this help message"
+ echo "  -f  flush DNS cache only" 
+} 
+
+# flushe DNS cache
+_flushcache() {
+  dscacheutil -flushcache
+}
+
+# exit if it's not running as root 
+if [ "$EUID" -ne 0 ]; then 
+  echo "please run as root"
+  exit 1
+fi
+
+# exit if $1 is null
+if [[ -z "$1" ]]; then
+  echo "error: missing argument"
+  _help
+  exit 1
+fi 
+
+# flush DNS cache only
+if [ "$1" == "-f" ]; then
+   _flushcache
+  exit 0
+fi 
+
+# else append the address into /etc/hosts
+# and flush DNS cache
+printf "0.0.0.0 $1\n::\t$1\n" >> $_target
+echo \
+  "appended \"$(sed -e '$!d' $_target)\" to $_target"
+_flushcache
+
+exit 0
