@@ -19,8 +19,14 @@ class Person {
     }
 
     public String getFullName() {
-        /* `return this.firstName + " " + this.lastName;` */
-        /* without syntactic sugar */
+        /*
+         * Below is an exmaple of how to write: 
+         *
+         *      return this.firstName + " " + this.lastName;
+         *
+         * without the syntactic sugar for concatenating.
+         *
+         * */
         return this.firstName.concat(" ").concat(this.lastName);
     }
 
