@@ -1,0 +1,5 @@
+To run the demo image with no ttys attached and have access to /dev/log,
+run the following command to run it in a container:
+
+	sudo docker run --detach -v /dev/log:/dev/log demo
+
